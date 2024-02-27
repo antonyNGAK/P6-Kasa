@@ -30,10 +30,47 @@ const ActiveLocation = () => {
             <div className ="active-Location__carousel">
               <Carousel image = {logement.pictures} alt = {logement.title} />
             </div>
-            
+            <div className="active-Location__container">
+            <div className="active-Location__title">
+              <section className="active-Location__name">
+                <h2>{logement.title}</h2>
+                <p>{logement.location}</p>
+              </section>
+              <div className="active-Location__tags">
+                {logement.tags.map((tag, index) => {
+                  return (
+                    <div key={index} className="tags__btn">
+                      {tag}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+            <div className="active-Location__position">
+              <div className="active-Location__host">
+                <p>{logement.host.name}</p>
+                <img src={logement.host.picture} alt={logement.host.name} />
+              </div>
+              <Rating score={logement.rating} />
+            </div>
+          </div>
+          <div className="active-Location__description">
+            <Collapse
+              key={`${id}-description`}
+              label="Description"
+              children={logement.description}
+            />
+            <Collapse
+              key={`${id}-equipments`}
+              label="Équipements"
+              children={'equipments'}
+            />
+          </div>
           </main>
-        )
-      }
+        ) :(
+          <Navigate to = "/404" />
+        )}
     </>
   )
 }
+export default ActiveLocation
