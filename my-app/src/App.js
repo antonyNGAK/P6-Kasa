@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { RentProvider } from './components/RentContext'
+import { LocationProvider } from './components/LocationContext'
 import Footer from './components/Footer'
 import Header from './components/Header.js'
 
@@ -8,9 +8,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <RentProvider>
+      <LocationProvider>
         <Outlet />
-      </RentProvider>
+      </LocationProvider>
       <Footer />
     </>
   )

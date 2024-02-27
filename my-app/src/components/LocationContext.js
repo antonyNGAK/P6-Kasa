@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react'
 /**
  * Crée un nouveau contexte pour les logements
  */
-const RentContext = createContext()
+const LocationContext = createContext()
 
 /**
  * Fournit les logements et une fonction pour les mettre à jour à tous les composants enfants
@@ -12,13 +12,13 @@ const RentContext = createContext()
  * @returns {React.Element} Un éléement du contexte 
  * 
  */
-export const RentProvider = ({ children }) => {
+export const LocationProvider = ({ children }) => {
   
   const [logements, setLogements] = useState([])
-  const rentAPI = '/logements.json'
+  const LocationAPI = '/logements.json'
 
   useEffect(() => {
-    fetch(rentAPI)
+    fetch(LocationAPI)
     .then((response) => {
       if (!response.ok) {
         throw new Error('Erreur HTTP')
@@ -34,9 +34,9 @@ export const RentProvider = ({ children }) => {
   }, [setLogements])
 
   return (
-    <RentContext.Provider value={{ logements, setLogements }}>
+    <LocationContext.Provider value={{ logements, setLogements }}>
       {children}
-    </RentContext.Provider>
+    </LocationContext.Provider>
   )
 }
 
@@ -44,6 +44,6 @@ export const RentProvider = ({ children }) => {
  * Fournit aux composants enfants les logements et une fonction pour les mettre à jour
  * @returns {React.Context<{logements: Array, setLogements: Function}>}}
  */
-export const useRentData = () => {
-   return useContext(RentContext)
+export const useDataLocation = () => {
+   return useContext(LocationContext)
 }

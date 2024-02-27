@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
 import Home from './pages/Home'
 import About from './pages/About'
-import ActiveRent from './pages/Rent'
+import ActiveLocation from './pages/Location'
 import PageError from './pages/PageError'
 
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'rent/:id',
-        element: <ActiveRent />,
+        element: <ActiveLocation />,
       },
       {
         path: '/404',
