@@ -1,11 +1,11 @@
 import React from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import { useDataLocation } from '../components/LocationContext'
-import Carousel from '../components/Carousel'
-import Rating from '../components/Rating'
-import Collapse from '../components/Collapse'
-import '../styles/pages/rent.scss'
-import '../styles/components/carousel.scss'
+//import Carousel from '../components/Carousel'
+//import Rating from '../components/Rating'
+//import Collapse from '../components/Collapse'
+//import '../styles/pages/rent.scss'
+//import '../styles/components/carousel.scss'
 
 /**
  * Composant ActiveLocation qui affiche les détails d'un logement spécifique

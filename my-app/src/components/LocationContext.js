@@ -1,15 +1,15 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 
 /**
- * Crée un nouveau contexte pour les logements
+ * Création d'un nouveau contexte pour les logements
  */
 const LocationContext = createContext()
 
 /**
- * Fournit les logements et une fonction pour les mettre à jour à tous les composants enfants
- * @param {React.children} children Les composants enfants du fournisseur
+ * Fournit les logements et une fonction pour les mettre à jour dans tous les composants enfants
+ * @param {React.children} children Les composants enfants
  * @useEffect {Function} Utilisation de useEffect pour récupérer les données de l'API
- * @returns {React.Element} Un éléement du contexte 
+ * @returns {React.Element} Un élément du contexte 
  * 
  */
 export const LocationProvider = ({ children }) => {
@@ -41,7 +41,7 @@ export const LocationProvider = ({ children }) => {
 }
 
 /**
- * Fournit aux composants enfants les logements et une fonction pour les mettre à jour
+ * Fournit aux composants enfants les logements et la fonction pour les mettre à jour systématiquement à chaque modification
  * @returns {React.Context<{logements: Array, setLogements: Function}>}}
  */
 export const useDataLocation = () => {
