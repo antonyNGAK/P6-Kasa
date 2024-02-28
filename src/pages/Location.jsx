@@ -1,11 +1,10 @@
-import React from 'react'
-import { useParams, Navigate } from 'react-router-dom'
-import { useDataLocation } from '../components/LocationContext'
-import Carousel from '../components/Carousel'
-import Rating from '../components/Rating'
-import Collapse from '../components/Collapse'
-import '../styles/pages/rent.scss'
-import '../styles/components/carousel.scss'
+import React from 'react';
+import { useParams, Navigate } from 'react-router-dom';
+import { useDataLocation } from '../components/LocationContext';
+import Carousel from '../components/Carousel';
+import Rating from '../components/Rating';
+import Collapse from '../components/Collapse';
+
 
 /**
  * Composant ActiveLocation qui affiche les détails d'un logement spécifique
@@ -19,7 +18,7 @@ const ActiveLocation = () => {
   const logement = logements.find((logement) => logement.id === id)
 
   const equipements = logement?.equipements.map((equipement, index) => {
-    return <li key={index}>{equipement}</li>
+    return <li key={index}>{equipements}</li>
   })
 
   return (
