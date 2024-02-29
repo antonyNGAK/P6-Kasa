@@ -1,0 +1,19 @@
+@import '../scss utils/variables.scss';
+
+.active-Location__rating {
+  @include flex-center;
+  gap: 10px;
+
+  & img {
+    width: 24px;
+    height: 36px;
+  }
+
+  @media screen and (max-width: $mobile) {
+
+    & img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
