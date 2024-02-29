@@ -9,7 +9,7 @@ const LocationContext = createContext()
  * Fournit les logements et une fonction pour les mettre à jour dans tous les composants enfants
  * @param {React.children} children Les composants enfants
  * @useEffect {Function} Utilisation de useEffect pour récupérer les données de l'API
- * @returns {React.Element} Un élément du contexte 
+ * @returns {React.Element} Contexte 
  * 
  */
 export const LocationProvider = ({ children }) => {
