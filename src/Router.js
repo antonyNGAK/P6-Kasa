@@ -8,7 +8,7 @@ import PageError from './pages/PageError';
 
 const router = createBrowserRouter([
     {
-        path: '/app',
+        path: '/home',
         element: <App />,
         children: [
             {
