@@ -1,4 +1,4 @@
-// Colors
+// Couleur
 $primary-color: #ff6060;
 $secondary-color: #f6f6f6;
 $card-background: linear-gradient(180deg, $primary-color, rgba(0, 0, 0, 0.50) 100%);
@@ -7,7 +7,7 @@ $color-white: #fff;
 $color-black: #000;
 
 
-//Fonts
+//police
 $font-size-mobile: 13px;
 
 //Breakpoints
@@ -17,13 +17,13 @@ $tablet: 768px;
 $desktop: 1024px;
 $desktop-large: 1440px;
 
-//Layout 
+//Mise en page 
 $default-margin: 0 100px;
 $default-mobile-margin: 0 20px;
 $default-margin-bottom: 50px;
 $default-gap: 50px;
 
-//Border radius
+//Bordures
 $default-border-radius: 25px;
 $small-border-radius: 10px;
 $collapse-border-radius: 5px;

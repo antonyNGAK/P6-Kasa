@@ -1,9 +1,9 @@
-import { createBrowserRouter } from 'react-router-dom';
-import App from './App';
-import Home from './pages/Home';
-import About from './pages/About';
-import ActiveLocation from './pages/Location';
-import PageError from './pages/PageError';
+import { createBrowserRouter } from 'react-router-dom'
+import App from './App'
+import Home from './pages/Home'
+import About from './pages/About'
+import ActiveLocation from './pages/Location'
+import PageError from './pages/PageError'
 
 
 const route = createBrowserRouter([
