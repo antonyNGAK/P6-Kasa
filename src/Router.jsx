@@ -6,7 +6,7 @@ import ActiveLocation from './pages/Location'
 import PageError from './pages/PageError'
 
 
-const route = createBrowserRouter([
+const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
@@ -20,7 +20,7 @@ const route = createBrowserRouter([
         element: <About />,
       },
       {
-        path: 'Location/:id',
+        path: 'location/:id',
         element: <ActiveLocation />,
       },
       {
@@ -31,4 +31,4 @@ const route = createBrowserRouter([
   },
 ])
 
-export default route
+export default router

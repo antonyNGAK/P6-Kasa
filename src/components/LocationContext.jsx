@@ -15,10 +15,10 @@ const LocationContext = createContext()
 export const LocationProvider = ({ children }) => {
   
   const [logements, setLogements] = useState([])
-  const LocationAPI = '/logements.json'
+  const locationAPI = '/logements.json'
 
   useEffect(() => {
-    fetch(LocationAPI)
+    fetch(locationAPI)
     .then((response) => {
       if (!response.ok) {
         throw new Error('Erreur HTTP')

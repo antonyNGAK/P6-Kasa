@@ -1,7 +1,7 @@
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import BannerImage from '../assets/home.png'
-//import '../styles/pages/home.scss'
+import '../styles/scss pages/home.scss'
 
 /**
  * @returns {JSX.Element} Home page

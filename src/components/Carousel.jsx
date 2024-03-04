@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button'
-import '../styles/components/carousel.scss'
+import '../styles/scss components/carousel.scss'
 
 /**
  * Composant Carousel qui gère diaporama

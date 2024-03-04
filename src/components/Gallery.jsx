@@ -8,18 +8,18 @@ import { useDataLocation } from './LocationContext'
  * @returns {JSX.Element} Le composant Gallery
  */
 const Gallery = () => {
-  /**
-   * Récupère des logements du contexte Location
-   */
+  
+  // Récupère des logements du contexte Location
+   
   const { logements } = useDataLocation()
 
   return (
     <section className="home__gallery">
-      {logements.map((Location) => (
+      {logements.map((location) => (
         // Pour chaque logement, on crée un lien vers la page détaillé du logement
-        <article key={Location.id}>
-          <Link to={`/Location/${Location.id}`}>
-            <Cards image={Location.cover} title={Location.title} />
+        <article key={location.id}>
+          <Link to={`/location/${location.id}`}>
+            <Cards image={location.cover} title={location.title} />
           </Link>
         </article>
       ))}

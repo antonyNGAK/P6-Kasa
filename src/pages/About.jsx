@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import BannerImage from '../assets/about.png'
-//import '../styles/scss pages/about.scss'
+import '../styles/scss pages/about.scss'
 
 /**
  * @returns {JSX.Element} Zone <A propos>
