@@ -1,0 +1,30 @@
+@import '../scss components/cards.scss';
+@import '../scss components/banner.scss';
+@import '../scss utils/var.scss';
+
+.home {
+  margin: $default-margin;
+//Alignement des cartes et espacement des colognes
+  .home__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    row-gap: $default-gap;
+    column-gap: 60px;
+    margin-bottom: $default-margin-bottom;
+    background: $secondary-color;
+    border-radius: $default-border-radius;
+    padding: 56px 50px 43px;
+  }
+
+  @media (min-width: $sml-mobile) and (max-width: $tablet) {
+    margin: $default-mobile-margin;
+
+    .home__gallery {
+      @include flex-column;
+      padding: 0;
+      row-gap: 20px;
+      margin-bottom: 27px;
+      background: none;
+    }
+  }
+}
