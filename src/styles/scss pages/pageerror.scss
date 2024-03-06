@@ -1,0 +1,44 @@
+@import '../scss utils/var.scss';
+
+.pageerror__container {
+  @include flex-center;
+  flex-direction: column;
+  gap: 139px;
+
+  & h1 {
+    font-size: 228px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 139px;
+    color: $primary-color;
+  }
+
+  & p {
+    font-size: 36px;
+    text-align: center;
+    color: $primary-color;
+  }
+
+  & a {
+    padding-bottom: 139px;
+    color: black;
+  }
+
+  @media (max-width: $mobile) {
+    gap: 113px;
+
+    & h1 {
+      font-size: 96px;
+    }
+
+    & p {
+      font-size: 18px;
+      width: 260px;
+    }
+
+    & a {
+      padding-bottom: 113px;
+      font-size: 14px;
+    }
+  }
+}

@@ -4,6 +4,8 @@ import { useDataLocation } from '../components/LocationContext'
 import Carousel from '../components/Carousel'
 import Rating from '../components/Rating'
 import Collapse from '../components/Collapse'
+//import '../styles/scss pages/location.scss'
+import '../styles/scss components/carousel.scss'
 
 
 /**
@@ -27,7 +29,7 @@ const ActiveLocation = () => {
         logement ? (
           <main className="active-location">
             <div className ="active-location__carousel">
-              <Carousel image = {logement.pictures} alt = {logement.title} />
+              <Carousel images = {logement.pictures} alt = {logement.title} />
             </div>
             <div className="active-location__container">
             <div className="active-location__title">
@@ -45,7 +47,7 @@ const ActiveLocation = () => {
                 })}
               </div>
             </div>
-            <div className="active-location__position">
+            <div className="active-location__ranking">
               <div className="active-location__host">
                 <p>{logement.host.name}</p>
                 <img src={logement.host.picture} alt={logement.host.name} />
@@ -60,9 +62,9 @@ const ActiveLocation = () => {
               children={logement.description}
             />
             <Collapse
-              key={`${id}-equipments`}
+              key={`${id}-equipements`}
               label="Équipements"
-              children={'equipments'}
+              children={'equipements'}
             />
           </div>
           </main>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import arrow from '../assets/arrow.svg'
-//import '../styles/scss components/collapse.scss'
+import '../styles/scss components/collapse.scss'
 
 /**
   *
