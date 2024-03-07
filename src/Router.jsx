@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <ActiveLocation />,
       },
       {
-        path: '/404',
+        path: '/*',
         element: <PageError />,
       },
     ],

@@ -4,8 +4,10 @@ import { useDataLocation } from '../components/LocationContext'
 import Carousel from '../components/Carousel'
 import Rating from '../components/Rating'
 import Collapse from '../components/Collapse'
-//import '../styles/scss pages/location.scss'
+import '../styles/scss pages/location.scss'
 import '../styles/scss components/carousel.scss'
+
+
 
 
 /**
@@ -19,8 +21,8 @@ const ActiveLocation = () => {
 
   const logement = logements.find((logement) => logement.id === id)
 
-  const equipements = logement?.equipements.map((equipement, index) => {
-    return <li key={index}>{equipement}</li>
+  const equipments = logement?.equipments.map((equipement, index) => {
+   return <li key={index}>{equipement}</li>
   })
 
   return (
@@ -62,9 +64,9 @@ const ActiveLocation = () => {
               children={logement.description}
             />
             <Collapse
-              key={`${id}-equipements`}
+              key={`${id}-equipments`}
               label="Équipements"
-              children={'equipements'}
+              children={'equipments'}
             />
           </div>
           </main>
