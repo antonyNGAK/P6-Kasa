@@ -18,11 +18,12 @@ const ActiveLocation = () => {
   // Récupère l'id du logement dans l'url
   const { id } = useParams()
   const { logements } = useDataLocation()
-
+// Affichage du logement selon l'id correspondant
   const logement = logements.find((logement) => logement.id === id)
 
-  const equipments = logement?.equipments.map((equipement, index) => {
-   return <li key={index}>{equipement}</li>
+// Affichage de la liste des équipements du logement demandé
+  const equipments = logement?.equipments.map((equipments, index) => {
+   return <li key={index}>{equipments}</li>
   })
 
   return (
@@ -58,20 +59,20 @@ const ActiveLocation = () => {
             </div>
           </div>
           <div className="active-location__description">
-            <Collapse
+            <Collapse //Détail sur la description
               key={`${id}-description`}
               label="Description"
               children={logement.description}
             />
-            <Collapse
+            <Collapse //Détail des équipements
               key={`${id}-equipments`}
               label="Équipements"
-              children={'equipments'}
+              children={equipments}
             />
           </div>
           </main>
         ) :(
-          <Navigate to = "/404" />
+          <Navigate to = "/pageError" /> //Redirection en cas de rechargement de la page
         )}
     </>
   )

@@ -10,9 +10,9 @@ import '../styles/scss components/rating.scss'
  * @returns {JSX.Element} Le composant Rating
  */
 const Rating = ({ score }) => {
-  /**
-   * Un tableau représentant les 5 étoiles
-   */
+  
+   // Un tableau représentant les 5 étoiles
+   
   const etoiles = [1, 2, 3, 4, 5]
 
   return (
