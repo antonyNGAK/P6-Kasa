@@ -4,7 +4,7 @@ import { LocationProvider } from './components/LocationContext'
 import Footer from './components/Footer'
 import Header from './components/Header'
 
-//Déclaration de l'APP
+//Déclaration de l'APP; 
 const App = () => {
   return (
     <>

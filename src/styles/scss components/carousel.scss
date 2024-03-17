@@ -75,8 +75,8 @@ $height-mobile: 255px;
     color: $color-white;
     z-index: 1;
 
-    @media screen and (max-width: $mobile) {
-      display: none;
+    @media screen and (max-width: $sml-mobile) {
+     // display: none;
     }
   }
 }
